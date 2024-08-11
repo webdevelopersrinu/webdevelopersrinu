@@ -47,7 +47,7 @@ I'm a passionate full-stack developer with a focus on the **MERN stack**. I love
 
 - [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/srinu-desetti/)
 - [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=flat-square&logo=react)](https://webdevelopersrinu.github.io/portfolio)
-- 📧 [Email Me](webdeveloper.srinu9@gmail.com )
+- 📧 **Email Me:** [webdeveloper.srinu9@gmail.com](mailto:webdeveloper.srinu9@gmail.com)
 
 ---
 
