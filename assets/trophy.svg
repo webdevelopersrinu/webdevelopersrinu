@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140" role="img" aria-label="Open Source Achievements">
+  <rect width="100%" height="100%" fill="#0b1220"/>
+  <g transform="translate(24,18)">
+    <g transform="translate(0,6)">
+      <circle cx="36" cy="36" r="34" fill="#ffd166"/>
+      <text x="36" y="44" font-size="36" text-anchor="middle" font-family="Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, Arial">🏆</text>
+    </g>
+    <text x="110" y="50" fill="#ffffff" font-size="30" font-family="Inter, Arial, sans-serif">Srinu Desetti — Open Source Achievements</text>
+    <text x="110" y="86" fill="#9aa4b2" font-size="16" font-family="Inter, Arial, sans-serif"> • Tailwind CSS • Axios • React Redux • Nodemailer • Valkey</text>
+  </g>
+</svg>

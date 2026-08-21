@@ -40,7 +40,7 @@
         x='50%' text-anchor='middle'
         letter-spacing='normal'>
         <textPath xlink:href='#path1'>
-            Full Stack Developer 💻
+            Open Source Contributor
         </textPath>
     </text>
         <path id='path2'>
@@ -54,7 +54,7 @@
         x='50%' text-anchor='middle'
         letter-spacing='normal'>
         <textPath xlink:href='#path2'>
-            React.js ⚛️ | Node.js 🚀 | Docker 🐳 | k8s ☸️
+            Full Stack & Devops Engineer
         </textPath>
     </text>
         <path id='path3'>

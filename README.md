@@ -4,7 +4,31 @@
 </p>
 
 ---
-<h3 align="center">Full-Stack + DevOps Engineer | Micro Frontends | Microservices | Kubernetes | Building Scalable Distributed Systems 🚀</h3>
+<h3 align="center">Full-Stack + DevOps Engineer | Open Source Contributor | Micro Frontends | Microservices | Kubernetes 🚀</h3>
+
+<p align="center">
+  <a href="https://github.com/tailwindlabs/tailwindcss/pull/20419"><img src="https://img.shields.io/badge/Tailwind_CSS-merged-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" /></a>
+  <a href="https://github.com/axios/axios/pull/10913"><img src="https://img.shields.io/badge/Axios-merged-5A29E4?style=flat-square&logo=axios&logoColor=white" /></a>
+  <a href="https://github.com/reduxjs/react-redux/pull/2306"><img src="https://img.shields.io/badge/React_Redux-merged-764ABC?style=flat-square&logo=redux&logoColor=white" /></a>
+  <a href="https://github.com/nodemailer/nodemailer/pull/1837"><img src="https://img.shields.io/badge/Nodemailer-merged-29B473?style=flat-square&logoColor=white" /></a>
+  <a href="https://github.com/valkey-io/iovalkey/pull/62"><img src="https://img.shields.io/badge/Valkey-merged-FF4438?style=flat-square&logoColor=white" /></a>
+</p>
+
+---
+
+### 🌍 Open Source Contributions
+
+> Merged bug fixes in libraries used by **millions of developers** — root-cause fixes with regression tests, shipped through maintainer review.
+
+| Project | Pull Request | What I Fixed |
+|---|---|---|
+| <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="16" /> **Tailwind CSS** | [#20419](https://github.com/tailwindlabs/tailwindcss/pull/20419) | Invalid modifiers like `rounded-sm/[5]` silently generated CSS — added the missing validation guard across the utility, shadow & stroke families |
+| <img src="https://cdn.simpleicons.org/axios/5A29E4" width="16" /> **Axios** | [#10913](https://github.com/axios/axios/pull/10913) | Enumerable `cause` in the fetch adapter exposed Node's circular error internals → crashed Pino/Winston with `Converting circular structure to JSON` |
+| <img src="https://cdn.simpleicons.org/redux/764ABC" width="16" /> **React Redux** | [#2306](https://github.com/reduxjs/react-redux/pull/2306) | `mapStateToProps` errors failed silently — now logged instantly with the component's `displayName` ([issue #1942](https://github.com/reduxjs/react-redux/issues/1942)) |
+| 📧 **Nodemailer** | [#1837](https://github.com/nodemailer/nodemailer/pull/1837) | Attachment filenames with `"` or `\` corrupted email headers — a header-injection-shaped hole, closed with proper escaping |
+| <img src="https://raw.githubusercontent.com/webdevelopersrinu/webdevelopersrinu/main/assets/valkey.svg" width="16" /> **Valkey** *(iovalkey)* | [#62](https://github.com/valkey-io/iovalkey/pull/62) | A stale socket-timeout timer outlived its socket, killed the **new** connection after reconnect → endless reconnect loop |
+
+📖 Deep-dive write-ups for each fix → **[blog.srinudesetti.in/open-source/contributions](https://blog.srinudesetti.in/open-source/contributions)**
 
 ---
 
@@ -16,6 +40,7 @@
 🏗️ Specialized in **Micro Frontend architecture**, **Microservices**, and **Kubernetes-based deployments**.  
 🚀 Currently at **Jasmaf Business Solutions Pvt. Ltd.**, delivering **enterprise-grade eCommerce platforms** from scratch to production.  
 ⚙️ End-to-end ownership — **system design → development → DevOps → scaling**.  
+🌍 **Open Source Contributor** — merged fixes in **Axios**, **Tailwind CSS**, **React Redux**, **Nodemailer** & **Valkey (iovalkey)**.  
 🌱 Always sharpening **System Design, Advanced Kubernetes**, and **production observability**.  
 💬 Ask me about **React, Next.js, Node.js, Microservices, Docker, or Kubernetes**.
 
@@ -73,6 +98,7 @@
 
 ### 🏆 Key Achievements
 
+- ✅ **Merged contributions into 5 major open source projects** — Axios, Tailwind CSS, React Redux, Nodemailer & Valkey's official Node.js client
 - ✅ Built **enterprise-grade architecture** from scratch → production
 - ✅ Delivered a **scalable system** supporting multiple user roles & portals
 - ✅ Hands-on with **real production deployments** (Kubernetes + CI/CD)
@@ -181,18 +207,9 @@
 ---
 --------->
 
-<!-- assets/trophy.svg -->
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140" role="img" aria-label="Achievements">
-  <rect width="100%" height="100%" fill="#0b1220"/>
-  <g transform="translate(24,18)">
-    <g transform="translate(0,6)">
-      <circle cx="36" cy="36" r="34" fill="#ffd166"/>
-      <text x="36" y="44" font-size="36" text-anchor="middle" font-family="Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, Arial">🏆</text>
-    </g>
-    <text x="110" y="50" fill="#ffffff" font-size="34" font-family="Inter, Arial, sans-serif">Srinu Desetti — Achievements</text>
-    <text x="110" y="86" fill="#9aa4b2" font-size="16" font-family="Inter, Arial, sans-serif">Full-Stack Engineer • Micro Frontends • Microservices • Kubernetes • DevOps</text>
-  </g>
-</svg>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/webdevelopersrinu/webdevelopersrinu/main/assets/trophy.svg" alt="Srinu Desetti — Open Source Achievements" width="900" />
+</p>
 
 ---
 
