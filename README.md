@@ -36,17 +36,27 @@
 
 ### 📦 Packages I Built & Maintain
 
-> **The Valkey Node.js stack** 
+Three npm packages I created and maintain — the Valkey Node.js stack, from the wire protocol up to Socket.IO scaling.
 
-| Package | Version | What It Does |
-|---|---|---|
-| **[valkey-errors](https://github.com/webdevelopersrinu/valkey-errors)** | <a href="https://www.npmjs.com/package/valkey-errors"><img src="https://img.shields.io/npm/v/valkey-errors?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Shared error classes for the whole stack — **zero dependencies**, 59 lines. Makes `instanceof` a reliable failure-handling contract across every layer |
-| **[valkey-parser](https://github.com/webdevelopersrinu/valkey-parser)** | <a href="https://www.npmjs.com/package/valkey-parser"><img src="https://img.shields.io/npm/v/valkey-parser?style=flat-square&logo=npm&color=CB3837&label=" /></a> | **RESP protocol decoder** — turns raw Valkey TCP bytes into JS values. Zero-copy fast path, adaptive buffer pool, correct handling of split TCP frames |
-| **[socket.io-valkey-adapter](https://github.com/webdevelopersrinu/socket.io-valkey-adapter)** | <a href="https://www.npmjs.com/package/socket.io-valkey-adapter"><img src="https://img.shields.io/npm/v/socket.io-valkey-adapter?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Keeps **any number of Socket.IO servers in sync** through Valkey Pub/Sub — broadcast replication & cross-instance queries. **137 tests** against Valkey 8 |
+#### [socket.io-valkey-adapter](https://github.com/webdevelopersrinu/socket.io-valkey-adapter)  <a href="https://www.npmjs.com/package/socket.io-valkey-adapter"><img src="https://img.shields.io/npm/v/socket.io-valkey-adapter?style=flat-square&logo=npm&color=CB3837&label=" /></a>
 
-🏅 Built `socket.io-valkey-adapter` with the **Stalwart Team** for the **Valkey Hackathon** hosted by **React Hyderabad**.
+Runs one Socket.IO app across many servers. A message broadcast on any instance reaches clients connected to all the others, with Valkey carrying the events between them.
 
-📖 Architecture write-ups → **[valkey-errors](https://blog.srinudesetti.in/open-source/valkey-errors)** · **[valkey-parser](https://blog.srinudesetti.in/open-source/valkey-parser)** · **[socket.io-valkey-adapter](https://blog.srinudesetti.in/open-source/socket-io-valkey-adapter)**
+[View on npm](https://www.npmjs.com/package/socket.io-valkey-adapter) · [Source](https://github.com/webdevelopersrinu/socket.io-valkey-adapter) · [Read the breakdown](https://blog.srinudesetti.in/open-source/socket-io-valkey-adapter)
+
+#### [valkey-parser](https://github.com/webdevelopersrinu/valkey-parser)  <a href="https://www.npmjs.com/package/valkey-parser"><img src="https://img.shields.io/npm/v/valkey-parser?style=flat-square&logo=npm&color=CB3837&label=" /></a>
+
+Reads Valkey's RESP wire protocol. It turns the raw bytes a Valkey server sends back into ordinary JavaScript values, fast enough to sit in a client's hot path.
+
+[View on npm](https://www.npmjs.com/package/valkey-parser) · [Source](https://github.com/webdevelopersrinu/valkey-parser) · [Read the breakdown](https://blog.srinudesetti.in/open-source/valkey-parser)
+
+#### [valkey-errors](https://github.com/webdevelopersrinu/valkey-errors)  <a href="https://www.npmjs.com/package/valkey-errors"><img src="https://img.shields.io/npm/v/valkey-errors?style=flat-square&logo=npm&color=CB3837&label=" /></a>
+
+The shared error types Valkey clients throw, so application code can catch a failure by its type instead of matching on the error message.
+
+[View on npm](https://www.npmjs.com/package/valkey-errors) · [Source](https://github.com/webdevelopersrinu/valkey-errors) · [Read the breakdown](https://blog.srinudesetti.in/open-source/valkey-errors)
+
+Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon hosted by React Hyderabad.
 
 ---
 
