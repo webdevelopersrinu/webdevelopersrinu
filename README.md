@@ -34,6 +34,22 @@
 
 ---
 
+### 📦 Packages I Built & Maintain
+
+> **The Valkey Node.js stack** 
+
+| Package | Version | What It Does |
+|---|---|---|
+| **[valkey-errors](https://github.com/webdevelopersrinu/valkey-errors)** | <a href="https://www.npmjs.com/package/valkey-errors"><img src="https://img.shields.io/npm/v/valkey-errors?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Shared error classes for the whole stack — **zero dependencies**, 59 lines. Makes `instanceof` a reliable failure-handling contract across every layer |
+| **[valkey-parser](https://github.com/webdevelopersrinu/valkey-parser)** | <a href="https://www.npmjs.com/package/valkey-parser"><img src="https://img.shields.io/npm/v/valkey-parser?style=flat-square&logo=npm&color=CB3837&label=" /></a> | **RESP protocol decoder** — turns raw Valkey TCP bytes into JS values. Zero-copy fast path, adaptive buffer pool, correct handling of split TCP frames |
+| **[socket.io-valkey-adapter](https://github.com/webdevelopersrinu/socket.io-valkey-adapter)** | <a href="https://www.npmjs.com/package/socket.io-valkey-adapter"><img src="https://img.shields.io/npm/v/socket.io-valkey-adapter?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Keeps **any number of Socket.IO servers in sync** through Valkey Pub/Sub — broadcast replication & cross-instance queries. **137 tests** against Valkey 8 |
+
+🏅 Built `socket.io-valkey-adapter` with the **Stalwart Team** for the **Valkey Hackathon** hosted by **React Hyderabad**.
+
+📖 Architecture write-ups → **[valkey-errors](https://blog.srinudesetti.in/open-source/valkey-errors)** · **[valkey-parser](https://blog.srinudesetti.in/open-source/valkey-parser)** · **[socket.io-valkey-adapter](https://blog.srinudesetti.in/open-source/socket-io-valkey-adapter)**
+
+---
+
 ### 👨‍💻 About Me
 
 <img align="right" alt="Coding" width="420" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/media/7ed7d5ca074b48b328150e5a231e8d1f.gif" />
@@ -42,7 +58,8 @@
 🏗️ Specialized in **Micro Frontend architecture**, **Microservices**, and **Kubernetes-based deployments**.  
 🚀 Currently at **Jasmaf Business Solutions Pvt. Ltd.**, delivering **enterprise-grade eCommerce platforms** from scratch to production.  
 ⚙️ End-to-end ownership — **system design → development → DevOps → scaling**.  
-🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **Tailwind CSS**, **Axios**, **React Redux**, **Nodemailer** & **Valkey**.  
+🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **Tailwind CSS**, **Axios**, **React Redux**, **Nodemailer** & **Valkey**.
+📦 **Creator & maintainer** of the **Valkey Node.js stack** on npm — `valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`.  
 🌱 Always sharpening **System Design, Advanced Kubernetes**, and **production observability**.  
 💬 Ask me about **React, Next.js, Node.js, Microservices, Docker, or Kubernetes**.
 
@@ -100,6 +117,7 @@
 
 ### 🏆 Key Achievements
 
+- ✅ **Author & maintainer of 3 published npm packages** — the Valkey Node.js client stack (`valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`)
 - ✅ **Merged contributions into 6 major open source projects** — including **Node.js core**, plus Tailwind CSS, Axios, React Redux, Nodemailer & Valkey's official Node.js client
 - ✅ Built **enterprise-grade architecture** from scratch → production
 - ✅ Delivered a **scalable system** supporting multiple user roles & portals
