@@ -7,6 +7,7 @@
 <h3 align="center">Full-Stack + DevOps Engineer | Open Source Contributor | Micro Frontends | Microservices | Kubernetes 🚀</h3>
 
 <p align="center">
+  <a href="https://github.com/nodejs/node/pull/64895"><img src="https://img.shields.io/badge/Node.js_core-merged-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" /></a>
   <a href="https://github.com/tailwindlabs/tailwindcss/pull/20419"><img src="https://img.shields.io/badge/Tailwind_CSS-merged-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" /></a>
   <a href="https://github.com/axios/axios/pull/10913"><img src="https://img.shields.io/badge/Axios-merged-5A29E4?style=flat-square&logo=axios&logoColor=white" /></a>
   <a href="https://github.com/reduxjs/react-redux/pull/2306"><img src="https://img.shields.io/badge/React_Redux-merged-764ABC?style=flat-square&logo=redux&logoColor=white" /></a>
@@ -22,6 +23,7 @@
 
 | Project | Pull Request | What I Fixed |
 |---|---|---|
+| <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="16" /> **Node.js** *(core)* | [#64895](https://github.com/nodejs/node/pull/64895) | A `return` inside `fs.glob()`'s child loop aborted the whole traversal instead of skipping one entry — silently dropping sibling files, with results varying by `readdir()` order |
 | <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="16" /> **Tailwind CSS** | [#20419](https://github.com/tailwindlabs/tailwindcss/pull/20419) | Invalid modifiers like `rounded-sm/[5]` silently generated CSS — added the missing validation guard across the utility, shadow & stroke families |
 | <img src="https://cdn.simpleicons.org/axios/5A29E4" width="16" /> **Axios** | [#10913](https://github.com/axios/axios/pull/10913) | Enumerable `cause` in the fetch adapter exposed Node's circular error internals → crashed Pino/Winston with `Converting circular structure to JSON` |
 | <img src="https://cdn.simpleicons.org/redux/764ABC" width="16" /> **React Redux** | [#2306](https://github.com/reduxjs/react-redux/pull/2306) | `mapStateToProps` errors failed silently — now logged instantly with the component's `displayName` ([issue #1942](https://github.com/reduxjs/react-redux/issues/1942)) |
@@ -40,7 +42,7 @@
 🏗️ Specialized in **Micro Frontend architecture**, **Microservices**, and **Kubernetes-based deployments**.  
 🚀 Currently at **Jasmaf Business Solutions Pvt. Ltd.**, delivering **enterprise-grade eCommerce platforms** from scratch to production.  
 ⚙️ End-to-end ownership — **system design → development → DevOps → scaling**.  
-🌍 **Open Source Contributor** — merged fixes in **Axios**, **Tailwind CSS**, **React Redux**, **Nodemailer** & **Valkey (iovalkey)**.  
+🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **Tailwind CSS**, **Axios**, **React Redux**, **Nodemailer** & **Valkey**.  
 🌱 Always sharpening **System Design, Advanced Kubernetes**, and **production observability**.  
 💬 Ask me about **React, Next.js, Node.js, Microservices, Docker, or Kubernetes**.
 
@@ -98,7 +100,7 @@
 
 ### 🏆 Key Achievements
 
-- ✅ **Merged contributions into 5 major open source projects** — Axios, Tailwind CSS, React Redux, Nodemailer & Valkey's official Node.js client
+- ✅ **Merged contributions into 6 major open source projects** — including **Node.js core**, plus Tailwind CSS, Axios, React Redux, Nodemailer & Valkey's official Node.js client
 - ✅ Built **enterprise-grade architecture** from scratch → production
 - ✅ Delivered a **scalable system** supporting multiple user roles & portals
 - ✅ Hands-on with **real production deployments** (Kubernetes + CI/CD)
