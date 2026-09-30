@@ -8,9 +8,11 @@
 
 <p align="center">
   <a href="https://github.com/nodejs/node/pull/64895"><img src="https://img.shields.io/badge/Node.js_core-merged-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" /></a>
+  <a href="https://github.com/facebook/react/pull/37618"><img src="https://img.shields.io/badge/React-merged-61DAFB?style=flat-square&logo=react&logoColor=black" /></a>
   <a href="https://github.com/tailwindlabs/tailwindcss/pull/20419"><img src="https://img.shields.io/badge/Tailwind_CSS-merged-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" /></a>
   <a href="https://github.com/axios/axios/pull/10913"><img src="https://img.shields.io/badge/Axios-merged-5A29E4?style=flat-square&logo=axios&logoColor=white" /></a>
   <a href="https://github.com/reduxjs/react-redux/pull/2306"><img src="https://img.shields.io/badge/React_Redux-merged-764ABC?style=flat-square&logo=redux&logoColor=white" /></a>
+  <a href="https://github.com/expressjs/multer/pull/1421"><img src="https://img.shields.io/badge/Multer-merged-000000?style=flat-square&logo=express&logoColor=white" /></a>
   <a href="https://github.com/nodemailer/nodemailer/pull/1837"><img src="https://img.shields.io/badge/Nodemailer-merged-29B473?style=flat-square&logoColor=white" /></a>
   <a href="https://github.com/valkey-io/iovalkey/pull/62"><img src="https://img.shields.io/badge/Valkey-merged-FF4438?style=flat-square&logoColor=white" /></a>
 </p>
@@ -24,10 +26,12 @@
 | Project | Pull Request | What I Fixed |
 |---|---|---|
 | <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" width="16" /> **Node.js** *(core)* | [#64895](https://github.com/nodejs/node/pull/64895) | A `return` inside `fs.glob()`'s child loop aborted the whole traversal instead of skipping one entry — silently dropping sibling files, with results varying by `readdir()` order |
+| <img src="https://cdn.simpleicons.org/react/61DAFB" width="16" /> **React** *(compiler)* | [#37618](https://github.com/facebook/react/pull/37618) | Locked in the fix for a `useEffectEvent` stale-value regression ([issue #37209](https://github.com/facebook/react/issues/37209)) — converted the repro into a permanent compiler test fixture so any refactor that reintroduces it fails CI |
 | <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="16" /> **Tailwind CSS** | [#20419](https://github.com/tailwindlabs/tailwindcss/pull/20419) | Invalid modifiers like `rounded-sm/[5]` silently generated CSS — added the missing validation guard across the utility, shadow & stroke families |
 | <img src="https://cdn.simpleicons.org/axios/5A29E4" width="16" /> **Axios** | [#10913](https://github.com/axios/axios/pull/10913) | Enumerable `cause` in the fetch adapter exposed Node's circular error internals → crashed Pino/Winston with `Converting circular structure to JSON` |
 | <img src="https://cdn.simpleicons.org/redux/764ABC" width="16" /> **React Redux** | [#2306](https://github.com/reduxjs/react-redux/pull/2306) | `mapStateToProps` errors failed silently — now logged instantly with the component's `displayName` ([issue #1942](https://github.com/reduxjs/react-redux/issues/1942)) |
 | <img src="https://raw.githubusercontent.com/webdevelopersrinu/webdevelopersrinu/main/assets/nodemailer.png" width="20" /> **Nodemailer** | [#1837](https://github.com/nodemailer/nodemailer/pull/1837) | Attachment filenames with `"` or `\` corrupted email headers — a header-injection-shaped hole, closed with proper escaping |
+| <img src="https://cdn.simpleicons.org/express/808080" width="16" /> **Multer** *(Express)* | [#1421](https://github.com/expressjs/multer/pull/1421) | Browsers escape `"`, CR & LF in upload filenames per WHATWG — Multer passed `file%22.ext` through raw; added a selective decoder that restores exactly those three, leaving literal `%` untouched (`50%off.pdf` stays intact) |
 | <img src="https://raw.githubusercontent.com/webdevelopersrinu/webdevelopersrinu/main/assets/valkey.svg" width="16" /> **Valkey** *(iovalkey)* | [#62](https://github.com/valkey-io/iovalkey/pull/62) | A stale socket-timeout timer outlived its socket, killed the **new** connection after reconnect → endless reconnect loop |
 
 📖 Deep-dive write-ups for each fix → **[blog.srinudesetti.in/open-source/contributions](https://blog.srinudesetti.in/open-source/contributions)**
@@ -68,7 +72,7 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 🏗️ Specialized in **Micro Frontend architecture**, **Microservices**, and **Kubernetes-based deployments**.  
 🚀 Currently at **Jasmaf Business Solutions Pvt. Ltd.**, delivering **enterprise-grade eCommerce platforms** from scratch to production.  
 ⚙️ End-to-end ownership — **system design → development → DevOps → scaling**.  
-🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **Tailwind CSS**, **Axios**, **React Redux**, **Nodemailer** & **Valkey**.
+🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **React**, **Tailwind CSS**, **Axios**, **React Redux**, **Multer**, **Nodemailer** & **Valkey**.
 📦 **Creator & maintainer** of the **Valkey Node.js stack** on npm — `valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`.  
 🌱 Always sharpening **System Design, Advanced Kubernetes**, and **production observability**.  
 💬 Ask me about **React, Next.js, Node.js, Microservices, Docker, or Kubernetes**.
@@ -128,7 +132,7 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 ### 🏆 Key Achievements
 
 - ✅ **Author & maintainer of 3 published npm packages** — the Valkey Node.js client stack (`valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`)
-- ✅ **Merged contributions into 6 major open source projects** — including **Node.js core**, plus Tailwind CSS, Axios, React Redux, Nodemailer & Valkey's official Node.js client
+- ✅ **Merged contributions into 8 major open source projects** — including **Node.js core** & **React**, plus Tailwind CSS, Axios, React Redux, Multer, Nodemailer & Valkey's official Node.js client
 - ✅ Built **enterprise-grade architecture** from scratch → production
 - ✅ Delivered a **scalable system** supporting multiple user roles & portals
 - ✅ Hands-on with **real production deployments** (Kubernetes + CI/CD)
