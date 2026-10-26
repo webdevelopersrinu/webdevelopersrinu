@@ -42,7 +42,7 @@
 
 ### 📦 Packages I Built & Maintain
 
-Three npm packages I created and maintain — the Valkey Node.js stack, from the wire protocol up to Socket.IO scaling.
+Ten npm packages I created and maintain — a Valkey Node.js ecosystem, from the wire protocol up to Socket.IO scaling, HTTP/edge access, rate limiting and object mapping.
 
 #### [socket.io-valkey-adapter](https://github.com/webdevelopersrinu/socket.io-valkey-adapter)  <a href="https://www.npmjs.com/package/socket.io-valkey-adapter"><img src="https://img.shields.io/npm/v/socket.io-valkey-adapter?style=flat-square&logo=npm&color=CB3837&label=" /></a>
 
@@ -62,6 +62,18 @@ The shared error types Valkey clients throw, so application code can catch a fai
 
 [View on npm](https://www.npmjs.com/package/valkey-errors) · [Source](https://github.com/webdevelopersrinu/valkey-errors) · [Read the breakdown](https://blog.srinudesetti.in/open-source/valkey-errors)
 
+#### More from the ecosystem
+
+| Package | What it does |
+|---|---|
+| [valkey-http](https://github.com/webdevelopersrinu/valkey-http) <a href="https://www.npmjs.com/package/valkey-http"><img src="https://img.shields.io/npm/v/valkey-http?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Zero-dependency fetch client for Valkey over HTTP — runs on edge, serverless & browsers |
+| [valkey-http-server](https://github.com/webdevelopersrinu/valkey-http-server) <a href="https://www.npmjs.com/package/valkey-http-server"><img src="https://img.shields.io/npm/v/valkey-http-server?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Self-hostable HTTP proxy that lets `valkey-http` clients reach a real Valkey server |
+| [socket.io-valkey-emitter](https://github.com/webdevelopersrinu/socket.io-valkey-emitter) <a href="https://www.npmjs.com/package/socket.io-valkey-emitter"><img src="https://img.shields.io/npm/v/socket.io-valkey-emitter?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Emit Socket.IO events to a server cluster from any other Node.js process, via Valkey |
+| [rate-limit-valkey](https://github.com/webdevelopersrinu/rate-limit-valkey) <a href="https://www.npmjs.com/package/rate-limit-valkey"><img src="https://img.shields.io/npm/v/rate-limit-valkey?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Valkey store for `express-rate-limit` — counters shared across every instance |
+| [mqemitter-valkey](https://github.com/webdevelopersrinu/mqemitter-valkey) <a href="https://www.npmjs.com/package/mqemitter-valkey"><img src="https://img.shields.io/npm/v/mqemitter-valkey?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Valkey-backed MQEmitter — pub/sub topics shared between Node.js processes |
+| [valkey-om](https://github.com/webdevelopersrinu/valkey-om-node) <a href="https://www.npmjs.com/package/valkey-om"><img src="https://img.shields.io/npm/v/valkey-om?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Object mapping for Valkey in TypeScript — entities, schemas, search |
+| [thunderid-nestjs](https://github.com/webdevelopersrinu/thunderid-nestjs) <a href="https://www.npmjs.com/package/thunderid-nestjs"><img src="https://img.shields.io/npm/v/thunderid-nestjs?style=flat-square&logo=npm&color=CB3837&label=" /></a> | Community-maintained NestJS SDK for ThunderID authentication |
+
 Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon hosted by React Hyderabad.
 
 ---
@@ -75,7 +87,7 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 🚀 Currently at **Jasmaf Business Solutions Pvt. Ltd.**, delivering **enterprise-grade eCommerce platforms** from scratch to production.  
 ⚙️ End-to-end ownership — **system design → development → DevOps → scaling**.  
 🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **React**, **Tailwind CSS**, **Axios**, **React Redux**, **Multer**, **Nodemailer**, **dotenv** & **Valkey**.
-📦 **Creator & maintainer** of the **Valkey Node.js stack** on npm — `valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`.  
+📦 **Creator & maintainer of 10 npm packages** — a **Valkey Node.js ecosystem**: parser, errors, Socket.IO adapter & emitter, HTTP/edge client + server, rate limiting, MQEmitter, object mapping.  
 🌱 Always sharpening **System Design, Advanced Kubernetes**, and **production observability**.  
 💬 Ask me about **React, Next.js, Node.js, Microservices, Docker, or Kubernetes**.
 
@@ -133,7 +145,7 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 
 ### 🏆 Key Achievements
 
-- ✅ **Author & maintainer of 3 published npm packages** — the Valkey Node.js client stack (`valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`)
+- ✅ **Author & maintainer of 10 published npm packages** — a Valkey Node.js ecosystem spanning the wire protocol, errors, Socket.IO scaling, HTTP/edge access, rate limiting and object mapping
 - ✅ **Merged contributions into 9 major open source projects** — including **Node.js core** & **React**, plus Tailwind CSS, Axios, React Redux, Multer, Nodemailer, dotenv & Valkey's official Node.js client
 - ✅ Built **enterprise-grade architecture** from scratch → production
 - ✅ Delivered a **scalable system** supporting multiple user roles & portals
