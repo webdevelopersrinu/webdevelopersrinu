@@ -14,6 +14,7 @@
   <a href="https://github.com/reduxjs/react-redux/pull/2306"><img src="https://img.shields.io/badge/React_Redux-merged-764ABC?style=flat-square&logo=redux&logoColor=white" /></a>
   <a href="https://github.com/expressjs/multer/pull/1421"><img src="https://img.shields.io/badge/Multer-merged-000000?style=flat-square&logo=express&logoColor=white" /></a>
   <a href="https://github.com/nodemailer/nodemailer/pull/1837"><img src="https://img.shields.io/badge/Nodemailer-merged-29B473?style=flat-square&logoColor=white" /></a>
+  <a href="https://github.com/motdotla/dotenv/pull/1049"><img src="https://img.shields.io/badge/dotenv-merged-ECD53F?style=flat-square&logo=dotenv&logoColor=black" /></a>
   <a href="https://github.com/valkey-io/iovalkey/pull/62"><img src="https://img.shields.io/badge/Valkey-merged-FF4438?style=flat-square&logoColor=white" /></a>
 </p>
 
@@ -32,6 +33,7 @@
 | <img src="https://cdn.simpleicons.org/redux/764ABC" width="16" /> **React Redux** | [#2306](https://github.com/reduxjs/react-redux/pull/2306) | `mapStateToProps` errors failed silently — now logged instantly with the component's `displayName` ([issue #1942](https://github.com/reduxjs/react-redux/issues/1942)) |
 | <img src="https://raw.githubusercontent.com/webdevelopersrinu/webdevelopersrinu/main/assets/nodemailer.png" width="20" /> **Nodemailer** | [#1837](https://github.com/nodemailer/nodemailer/pull/1837) | Attachment filenames with `"` or `\` corrupted email headers — a header-injection-shaped hole, closed with proper escaping |
 | <img src="https://cdn.simpleicons.org/express/808080" width="16" /> **Multer** *(Express)* | [#1421](https://github.com/expressjs/multer/pull/1421) | Browsers escape `"`, CR & LF in upload filenames per WHATWG — Multer passed `file%22.ext` through raw; added a selective decoder that restores exactly those three, leaving literal `%` untouched (`50%off.pdf` stays intact) |
+| <img src="https://cdn.simpleicons.org/dotenv/ECD53F" width="16" /> **dotenv** | [#1049](https://github.com/motdotla/dotenv/pull/1049) | `populate()` validated input with `typeof` — but `typeof null === 'object'`, so passing `null` crashed with a raw `TypeError` instead of dotenv's documented `OBJECT_REQUIRED` error; guarded both arguments + regression tests, merged by dotenv's creator |
 | <img src="https://raw.githubusercontent.com/webdevelopersrinu/webdevelopersrinu/main/assets/valkey.svg" width="16" /> **Valkey** *(iovalkey)* | [#62](https://github.com/valkey-io/iovalkey/pull/62) | A stale socket-timeout timer outlived its socket, killed the **new** connection after reconnect → endless reconnect loop |
 
 📖 Deep-dive write-ups for each fix → **[blog.srinudesetti.in/open-source/contributions](https://blog.srinudesetti.in/open-source/contributions)**
@@ -72,7 +74,7 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 🏗️ Specialized in **Micro Frontend architecture**, **Microservices**, and **Kubernetes-based deployments**.  
 🚀 Currently at **Jasmaf Business Solutions Pvt. Ltd.**, delivering **enterprise-grade eCommerce platforms** from scratch to production.  
 ⚙️ End-to-end ownership — **system design → development → DevOps → scaling**.  
-🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **React**, **Tailwind CSS**, **Axios**, **React Redux**, **Multer**, **Nodemailer** & **Valkey**.
+🌍 **Open Source Contributor** — merged fixes in **Node.js core**, **React**, **Tailwind CSS**, **Axios**, **React Redux**, **Multer**, **Nodemailer**, **dotenv** & **Valkey**.
 📦 **Creator & maintainer** of the **Valkey Node.js stack** on npm — `valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`.  
 🌱 Always sharpening **System Design, Advanced Kubernetes**, and **production observability**.  
 💬 Ask me about **React, Next.js, Node.js, Microservices, Docker, or Kubernetes**.
@@ -132,7 +134,7 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 ### 🏆 Key Achievements
 
 - ✅ **Author & maintainer of 3 published npm packages** — the Valkey Node.js client stack (`valkey-errors`, `valkey-parser`, `socket.io-valkey-adapter`)
-- ✅ **Merged contributions into 8 major open source projects** — including **Node.js core** & **React**, plus Tailwind CSS, Axios, React Redux, Multer, Nodemailer & Valkey's official Node.js client
+- ✅ **Merged contributions into 9 major open source projects** — including **Node.js core** & **React**, plus Tailwind CSS, Axios, React Redux, Multer, Nodemailer, dotenv & Valkey's official Node.js client
 - ✅ Built **enterprise-grade architecture** from scratch → production
 - ✅ Delivered a **scalable system** supporting multiple user roles & portals
 - ✅ Hands-on with **real production deployments** (Kubernetes + CI/CD)
