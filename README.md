@@ -157,7 +157,6 @@ Built `socket.io-valkey-adapter` with the Stalwart Team for the Valkey Hackathon
 ### 🎓 Education
 
 - 🎓 **B.Sc.** (2021 – 2024) — *Mother Teresa Degree College, Tekkali*
-- 🌏 **Languages:** English, Telugu
 
 ---
 
